@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="py-5">
+    <div class="container py-5 w-75 text-center">
+        <h1 class="position-relative w-25 m-auto">Bookmarker</h1>
+        <hr >
+        <h2 class="w-50 m-auto">
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+
+        </h2>
+
+    </div>
+    <div class="container w-75">
+        <div class="py-4">
+            <label for="" class="w-100 py-3">
+                <i class="fa-solid fa-book-bookmark"></i>
+                Site Name
+            </label>
+            <input type="text" name="" id="siteName" class="w-100" placeholder="Bookmark Name">    
+        </div>
+        <div class="pb-5">
+            <label for="" class="w-100 py-3">
+            <i class="fa-solid fa-link"></i>
+            Site URL
+            </label>
+            <input type="text" name="" id="siteURL" class="w-100 " placeholder="Website URL">
+            <p id="valid"></p>
+        </div>
+        <div class="text-center pb-5">
+            <button class="btn btn-submit px-5 text-center" onclick="addSite()">submit</button>
+        </div>
+        <hr>
+    </div>
+    <div class="container w-75  text-center py-5">
+        <table class="table table-striped">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="list">
+                <!-- <tr>
+                    <td>1</td>
+                    <td>instagram</td>
+                    <td><button onclick=" window.open('http://instagram.com','_blank')" class="btn btn-visit"> <i class="fa-solid fa-eye"></i> Visit</button></td>
+                    <td><button onclick="delete()" class="btn btn-delete"> <i class="fa-solid fa-trash"></i> Delete</button></td>
+    
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+    
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
